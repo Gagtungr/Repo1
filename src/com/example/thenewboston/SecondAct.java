@@ -13,8 +13,12 @@ public class SecondAct extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
+
+		Intent openStartingPoint = new Intent("com.example.thenewboston.MENU");
+		startActivity(openStartingPoint);
 		
-		setContentView(R.layout.second_act);
+		
+/*		setContentView(R.layout.second_act);
 		
 		ourSong = MediaPlayer.create(SecondAct.this, R.raw.some_tune);
 		ourSong.start();
@@ -35,6 +39,7 @@ public class SecondAct extends Activity {
 		};
 		
 		timer.start();
+*/
 	}
 
 	@Override
@@ -42,7 +47,7 @@ public class SecondAct extends Activity {
 		// TODO Auto-generated method stub
 		super.onPause();
 
-		ourSong.release();
+		//ourSong.release();
 		
 		finish();
 	}
