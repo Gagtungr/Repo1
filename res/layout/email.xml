@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:orientation="vertical" >
+
+    <ScrollView android:layout_width="fill_parent"
+        		android:layout_height="fill_parent"
+        		android:layout_weight="30">
+	    <LinearLayout android:layout_width="match_parent"
+	    			  android:layout_height="match_parent"
+	    			  android:orientation="vertical" >
+		    <TextView
+		        android:id="@+id/tvEmAddr"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:hint="Email address" />
+		
+		    <EditText
+		        android:id="@+id/etEmAddr"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:ems="10" >
+		    </EditText>
+		
+		    <TextView
+		        android:id="@+id/tvHate"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:hint="Hateful intro" />
+		
+		    <EditText
+		        android:id="@+id/etHate"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:ems="10" />
+		
+		    <TextView
+		        android:id="@+id/tvNames"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:hint="Person&apos;s name" />
+		
+		    <EditText
+		        android:id="@+id/etNames"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:ems="10" />
+		
+		    <TextView
+		        android:id="@+id/tvStupThigs"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:hint="TextView" />
+		
+		    <EditText
+		        android:id="@+id/etStupThigs"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:ems="10" />
+		
+		    <TextView
+		        android:id="@+id/tvIntro"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:hint="TextView" />
+		
+		    <EditText
+		        android:id="@+id/etIntro"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:ems="10" />
+		
+		    <TextView
+		        android:id="@+id/tvOutro"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:hint="TextView" />
+		
+		    <EditText
+		        android:id="@+id/etOutro"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:ems="10" />
+		</LinearLayout>
+	</ScrollView>
+
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:layout_weight="40" >
+	    <Button
+	        android:id="@+id/bSendMail"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:text="Send Mail" />
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:layout_weight="30">
+	    <AnalogClock
+	        android:id="@+id/analogClock1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent" />
+	</LinearLayout>
+</LinearLayout>
