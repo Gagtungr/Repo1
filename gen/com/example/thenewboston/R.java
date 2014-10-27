@@ -30,26 +30,31 @@ public final class R {
         public static final int splash_bg=0x7f020006;
     }
     public static final class id {
-        public static final int Exit=0x7f0b0034;
-        public static final int aboutUs=0x7f0b0032;
-        public static final int action_settings=0x7f0b0035;
+        public static final int Exit=0x7f0b003b;
+        public static final int aboutUs=0x7f0b0039;
+        public static final int action_settings=0x7f0b003c;
         public static final int analogClock1=0x7f0b000e;
-        public static final int bAddTab=0x7f0b002d;
-        public static final int bHandle1=0x7f0b001d;
-        public static final int bHandle2=0x7f0b001e;
-        public static final int bHandle3=0x7f0b001f;
-        public static final int bHandle4=0x7f0b0020;
-        public static final int bResults=0x7f0b002f;
+        public static final int bAddTab=0x7f0b0034;
+        public static final int bBack=0x7f0b001f;
+        public static final int bBrowse=0x7f0b001e;
+        public static final int bClearHist=0x7f0b0022;
+        public static final int bForward=0x7f0b0020;
+        public static final int bHandle1=0x7f0b0024;
+        public static final int bHandle2=0x7f0b0025;
+        public static final int bHandle3=0x7f0b0026;
+        public static final int bHandle4=0x7f0b0027;
+        public static final int bRefresh=0x7f0b0021;
+        public static final int bResults=0x7f0b0036;
         public static final int bReturn=0x7f0b001b;
         public static final int bSA=0x7f0b0010;
         public static final int bSAFR=0x7f0b0011;
         public static final int bSendMail=0x7f0b000d;
         public static final int bSetWP=0x7f0b0015;
-        public static final int bStartW=0x7f0b0027;
-        public static final int bStopW=0x7f0b0028;
-        public static final int cbSlidable=0x7f0b0024;
-        public static final int content=0x7f0b0022;
-        public static final int etCommands=0x7f0b002e;
+        public static final int bStartW=0x7f0b002e;
+        public static final int bStopW=0x7f0b002f;
+        public static final int cbSlidable=0x7f0b002b;
+        public static final int content=0x7f0b0029;
+        public static final int etCommands=0x7f0b0035;
         public static final int etEmAddr=0x7f0b0002;
         public static final int etHate=0x7f0b0004;
         public static final int etIntro=0x7f0b000a;
@@ -57,21 +62,22 @@ public final class R {
         public static final int etOutro=0x7f0b000c;
         public static final int etSend=0x7f0b000f;
         public static final int etStupThigs=0x7f0b0008;
-        public static final int handle=0x7f0b0023;
+        public static final int etURL=0x7f0b001d;
+        public static final int handle=0x7f0b002a;
         public static final int ibTakePic=0x7f0b0014;
         public static final int ivReturnedPic=0x7f0b0013;
-        public static final int prefs=0x7f0b0033;
+        public static final int prefs=0x7f0b003a;
         public static final int rBoth=0x7f0b001a;
         public static final int rGay=0x7f0b0018;
         public static final int rLesb=0x7f0b0019;
         public static final int rgAnswers=0x7f0b0017;
-        public static final int slidingD=0x7f0b0021;
-        public static final int tab1=0x7f0b0026;
-        public static final int tab2=0x7f0b002a;
-        public static final int tab3=0x7f0b002c;
-        public static final int tabhost=0x7f0b0025;
-        public static final int tbPassword=0x7f0b0030;
-        public static final int textView2=0x7f0b002b;
+        public static final int slidingD=0x7f0b0028;
+        public static final int tab1=0x7f0b002d;
+        public static final int tab2=0x7f0b0031;
+        public static final int tab3=0x7f0b0033;
+        public static final int tabhost=0x7f0b002c;
+        public static final int tbPassword=0x7f0b0037;
+        public static final int textView2=0x7f0b0032;
         public static final int tvDisp=0x7f0b0000;
         public static final int tvEmAddr=0x7f0b0001;
         public static final int tvGot=0x7f0b0012;
@@ -80,10 +86,11 @@ public final class R {
         public static final int tvNames=0x7f0b0005;
         public static final int tvOutro=0x7f0b000b;
         public static final int tvQuestion=0x7f0b0016;
-        public static final int tvResults=0x7f0b0031;
-        public static final int tvShowResults=0x7f0b0029;
+        public static final int tvResults=0x7f0b0038;
+        public static final int tvShowResults=0x7f0b0030;
         public static final int tvStupThigs=0x7f0b0007;
         public static final int tvText=0x7f0b001c;
+        public static final int wvBrowse=0x7f0b0023;
     }
     public static final class layout {
         public static final int about=0x7f030000;
@@ -93,9 +100,10 @@ public final class R {
         public static final int photo=0x7f030004;
         public static final int second_act=0x7f030005;
         public static final int sender=0x7f030006;
-        public static final int sliding=0x7f030007;
-        public static final int tabs=0x7f030008;
-        public static final int text=0x7f030009;
+        public static final int simplebrowser=0x7f030007;
+        public static final int sliding=0x7f030008;
+        public static final int tabs=0x7f030009;
+        public static final int text=0x7f03000a;
     }
     public static final class menu {
         public static final int cool_menu=0x7f0a0000;
