@@ -59,6 +59,7 @@ public class SimpleBrowser extends Activity implements OnClickListener {
 			String sUrl = etUrl.getText().toString();
 			wvBrw.loadUrl(sUrl);
 			
+			//hide keyboard
 			InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
 			imm.hideSoftInputFromWindow(etUrl.getWindowToken(), 0);
 			break;
