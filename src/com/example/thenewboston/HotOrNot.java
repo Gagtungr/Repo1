@@ -1,5 +1,6 @@
 package com.example.thenewboston;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteDatabase.CursorFactory;
@@ -57,6 +58,15 @@ public class HotOrNot {
 			
 		}
 		
+	}
+
+
+	public long createEntry(String name, String hotness) {
+		ContentValues cv = new ContentValues();
+		cv.put(KEY_NAME, name);
+		cv.put(KEY_HOTNESS, hotness);
+		
+		return m_DB.insert(DB_TABLE, null, cv);
 	}
 
 }
