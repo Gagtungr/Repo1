@@ -2,8 +2,8 @@ package com.example.thenewboston;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteDatabase.CursorFactory;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class HotOrNot {
@@ -67,6 +67,61 @@ public class HotOrNot {
 		cv.put(KEY_HOTNESS, hotness);
 		
 		return m_DB.insert(DB_TABLE, null, cv);
+	}
+
+	public String getData() {
+		
+		String[] cols = new String[] {KEY_ROWID, KEY_NAME, KEY_HOTNESS};
+		String result = ""; 
+		
+		Cursor c = m_DB.query(DB_TABLE, cols, null, null, null, null, null);
+		
+		int iRowId = c.getColumnIndex(KEY_ROWID);
+		int iName = c.getColumnIndex(KEY_NAME);
+		int iHotness = c.getColumnIndex(KEY_HOTNESS);
+		
+		for (c.moveToFirst(); !c.isAfterLast(); c.moveToNext()) {
+			result += c.getString(iRowId) + " - " + c.getString(iName) + " - " + c.getString(iHotness) + "\n";
+		}
+		
+		return result;
+	}
+
+	public String getNameById(Long rwid) {
+		String[] cols = new String[] {KEY_ROWID, KEY_NAME, KEY_HOTNESS};
+		Cursor c = m_DB.query(DB_TABLE, cols, KEY_ROWID + "=" + rwid, null, null, null, null);
+		
+		if (c != null) {
+			c.moveToFirst();
+			return c.getString(1);
+		}
+		
+		return null;
+	}
+
+	public String getHotnessById(Long rwid) {
+		String[] cols = new String[] {KEY_ROWID, KEY_NAME, KEY_HOTNESS};
+		Cursor c = m_DB.query(DB_TABLE, cols, KEY_ROWID + "=" + rwid, null, null, null, null);
+		
+		if (c != null) {
+			c.moveToFirst();
+			return c.getString(2);
+		}
+		return null;
+	}
+
+	public void updEntry(Long rwid, String name, String hotness) {
+		ContentValues cvUpd = new ContentValues();
+		
+		cvUpd.put(KEY_NAME, name);
+		cvUpd.put(KEY_HOTNESS, hotness);
+		
+		m_DB.update(DB_TABLE, cvUpd, KEY_ROWID + "=" + rwid, null);
+		
+	}
+
+	public void DeleteEntr(Long rwid) {
+		m_DB.delete(DB_TABLE, KEY_ROWID + "=" + rwid, null);
 	}
 
 }

@@ -43,4 +43,35 @@
         android:layout_height="wrap_content"
         android:text="View" />
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Row ID" />
+
+    <EditText
+        android:id="@+id/etSQLRowInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/bSQLGetInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Info" />
+
+    <Button
+        android:id="@+id/bSQLEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit entry" />
+
+    <Button
+        android:id="@+id/bSQLDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete entry" />
+
 </LinearLayout>
